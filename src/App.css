@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background-image: url(Screen\ Shot\ 2024-01-29\ at\ 11.57.21\ PM.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 25px;
+  margin-top: 120px;
+  color: rgb(73, 165, 30);
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.par {
+  width: 50%;
+  text-align: center;
+  color: rgb(74, 74, 75);
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+
+}
+
+.search-input {
+  margin: 20px;
+  width: 20%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #76d523;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(52, 52, 52);
+  font-size: 15px;
+  outline-color: rgb(211, 211, 210);
+
+ 
+}
+
+button {
+  background-color: rgba(151, 238, 30, 0.756);
+  border: none;
+  border-radius: 30px;
+  padding: 13px 25px;
+  color: rgb(88, 88, 88);
+  font-weight: bolder;
+  font-size: 15px;
+  margin: 20px;
+  
+}
+
+.btn-reset {
+  padding: 13px 32px;
+
+}
+
+button:hover {
+  background-color: rgb(147, 227, 68);
+}
+
+.error-message {
+  color: rgb(41, 40, 40);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+
+
+}
+
+.container_loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a94;
+}
+
+.lds-roller {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #47f628;
+  margin: -4px 0 0 -4px;
+  z-index: 2;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+      transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+      transform: rotate(360deg);
   }
 }
+
+.par-nutritionfacts {
+  font-size: 20px;
+  color: rgb(73, 165, 30);
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px;
+  
+  
+}
+
+.card {
+  margin-top: 20px;
+  background-color: rgb(251, 246, 238);
+  opacity: 95%;
+  padding: 20px;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0px 5px 5px 0px rgb(155, 155, 155);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+
+}
+
+span {
+  color: #404040;
+  font-weight: bold;
+}
+
+.par-totalcalories {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 900;
+  
+}
+
+
+@media all and (max-width: 1300px) {
+  h1 {
+    margin-top: 300px;
+    font-size: 45px;
+  }
+
+  .par {
+    font-size: 30px;
+  }
+
+  .search-input {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 25px;
+  }
+
+  .card {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .par-nutritionfacts {
+
+    font-size: 35px;
+  }
+
+  .par-totalcalories {
+    font-size: 25px;
+  }
+}
+
+
+@media all and (max-width: 900px) {
+  .card {
+    width: 70%;
+  }
+
+  .search-input {
+    width: 50%;
+  }
+
+  
+
+
+
+}
+
+@media all and (max-width: 500px) {
+  .search-input {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .par {
+    width: 80%;
+    text-align: start;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .par-nutritionfacts {
+    font-size: 25px;
+  }
+
+  .par-totalcalories {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 27px;
+    margin-top: 150px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+
+
+}
+
+
+@media all and (max-width: 330px) {
+
+h1 {
+  font-size: 20px;
+}
+
+button {
+  font-size: 12px;
+}
+
+.card {
+  width: 80%;
+}
+
+
+
+
+
+}
+
+
