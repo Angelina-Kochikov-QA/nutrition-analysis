@@ -77,7 +77,7 @@ function App() {
         {showLoader && <LoaderPage />}
         <h1>Nutrition Analysis App</h1>
         <form className="container" onSubmit={finalSearch}>
-          <p className='par'>Dive deep into the nutritional composition of your meals!<br></br> Enter your ingredients below and our app provides you with detailed breakdowns of macronutrients (carbohydrates, proteins, fats) and micronutrients (vitamins and minerals).</p>
+          <p className='par'>Dive deep into the nutritional composition of your meals!<br></br> Enter your ingredients below and our app provides you with detailed <span className='breakdowns'>breakdowns of macronutrients</span> (carbohydrates, proteins, fats) and micronutrients (vitamins and minerals).</p>
           <input className={`search-input ${!inputValid ? 'invalid-input' : ''}`} onChange={myNutritionSearch} value={mySearch} type='text' placeholder='Enter, ex: 1 cup rice, 10 oz chickpeas...'></input>
           {!inputValid && <p className="error-message">Minimum 10 characters</p>}
           <div className='buttons'>
