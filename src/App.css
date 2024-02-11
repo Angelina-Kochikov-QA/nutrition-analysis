@@ -295,7 +295,7 @@ span {
   .par {
     width: 80%;
     text-align: start;
-    font-size: 17px;
+    font-size: 18px;
     padding: 20px;
   }
 
@@ -314,7 +314,6 @@ span {
 
   h1 {
     font-size: 22px;
-    margin-right: 32px;
     margin-top: 130px;
   }
 
